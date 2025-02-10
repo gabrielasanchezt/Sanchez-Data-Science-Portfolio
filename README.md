@@ -4,7 +4,8 @@
 # Sanchez Data Science Portfolio
 ## About Me
 # Hi, I'm Gabriela
-[<img src="https://github.com/{{ gabrielasanchezt }}.png" width="60px;"/><br /><sub><ahref="https://github.com/{{ gabrielasanchezt }}">{{ gabrielasanchezt }}</a></sub>](https://github.com/{{ gabrielasanchezt }}/{{ Sanchez-Data-Science-Portfolio }}
+![Profile Picture](https://avatars.githubusercontent.com/u/196481302?v=4&size=64)
+
 
 
 
