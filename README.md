@@ -25,13 +25,13 @@ This repository showcases my data science projects, including exploratory data a
 - `Models/`: Showcases machine learning models and their applications.
 
 ## 🚀 Current Projects
-1. **First Project**: coming soon
-2. **Second Project**: coming soon
+1. **First Project**: Palmer's Penguins
+2. **Second Project**: Spotify statistics
 
 ## Goals
-1.
-2.
-3.
+1. Learn about coding
+2. Be able to enhance my professional profile
+3. Showcase my personal projects and technical skills
 
 ---
 
