@@ -8,12 +8,6 @@ import matplotlib.pyplot as plt
 # Set title
 st.title("Palmer's Penguins Explorer")
 
-# Description
-st.write("""
-This Streamlit app allows you to explore the Palmer Penguins dataset.  
-Use the interactive filters in the sidebar to refine your analysis.
-""")
-
 # Load dataset
 @st.cache_data
 def load_data():
