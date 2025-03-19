@@ -26,7 +26,7 @@ This repository showcases my data science projects, including exploratory data a
 
 ## 🚀 Current Projects
 1. **First Project**: Palmer's Penguins
-2. **Second Project**: Spotify statistics
+2. **Second Project**: Tidy Project Portfolio LINK: [link](https://github.com/gabrielasanchezt/TidyData-Project/)
 
 ## Goals
 1. Learn about coding
@@ -34,6 +34,5 @@ This repository showcases my data science projects, including exploratory data a
 3. Showcase my personal projects and technical skills
 
 ---
-
 - 📧 Email: msanch25@nd.edu
 - 🔗 LinkedIn: [Gabriela Sanchez](https://www.linkedin.com/in/gabriela-sanchez-1b0476225/)
