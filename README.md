@@ -26,7 +26,7 @@ This repository showcases my data science projects, including exploratory data a
 
 ## 🚀 Current Projects
 1. **First Project**: Palmer's Penguins
-2. **Second Project**: Tidy Project Portfolio LINK: [link](https://github.com/gabrielasanchezt/TidyData-Project/)
+2. **Second Project**: Tidy Project Portfolio LINK: [https://github.com/gabrielasanchezt/TidyData-Project/](https://github.com/gabrielasanchezt/TidyData-Project/)
 
 ## Goals
 1. Learn about coding
