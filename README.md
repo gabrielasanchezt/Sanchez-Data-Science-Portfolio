@@ -25,8 +25,10 @@ This repository showcases my data science projects, including exploratory data a
 - `Models/`: Showcases machine learning models and their applications.
 
 ## 🚀 Current Projects
-1. **First Project**: Palmer's Penguins
-2. **Second Project**: Tidy Project Portfolio LINK: [https://github.com/gabrielasanchezt/TidyData-Project/](https://github.com/gabrielasanchezt/TidyData-Project/)
+1. **First Project**: Palmer's Penguins LINK: [https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/basic_streamlit.app}](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/basic_streamlit.app)
+  
+3. **Second Project**: Tidy Project Portfolio LINK: [https://github.com/gabrielasanchezt/TidyData-Project/](https://github.com/gabrielasanchezt/TidyData-Project/)
+
 Description:
 What the Tidy Data project entails:
 This Tidy Data project focuses on cleaning and analyzing a dataset of Olympic athletes and their medal performances across different sports. The goal is to apply Tidy Data Principles to transform the data into a clean, structured format for easier analysis. The dataset includes athlete names, sports, and the medals they won (gold, silver, or bronze). I used Python to clean the data, reshape it, and create visualizations that help show trends in the medal counts across different athletes and sports.
