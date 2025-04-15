@@ -16,6 +16,17 @@ This application enables users to explore **classification** tasks using pre-bui
 Whether you're a beginner in data science or just looking to rapidly prototype ideas, this tool is designed to provide quick, no-code insights into model performance.
 
 ---
+## 📸 Visual Examples
+
+### 🧪 Confusion Matrix Output
+![Confusion Matrix](screenshots/confusion_matrix.png)
+
+### 📈 ROC Curve Example
+![ROC Curve](screenshots/roc_curve.png)
+
+### 🌸 Interface
+![Interface](screenshots/interface.png)
+
 
 ## 🛠️ Instructions
 
