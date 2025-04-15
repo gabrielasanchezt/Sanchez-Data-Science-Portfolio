@@ -34,5 +34,5 @@ Whether you're a beginner in data science or just looking to rapidly prototype i
 
 1. **Clone this repo**
    ```bash
-   git clone https://github.com/your-username/MLStreamlitapp.git
+   git clone https://github.com/gabrielasanchezt/MLStreamlitapp.git
    cd MLStreamlitapp
