@@ -2,8 +2,6 @@
 
 A simple and interactive web application built with **Streamlit** that allows users to upload or select datasets, train supervised learning models, tune hyperparameters, and visualize performance metrics — all without writing a single line of code.
 
----
-
 ## 🚀 Project Overview
 
 This application enables users to explore **classification** tasks using pre-built datasets or their own CSV files. Users can:
@@ -15,7 +13,6 @@ This application enables users to explore **classification** tasks using pre-bui
 
 Whether you're a beginner in data science or just looking to rapidly prototype ideas, this tool is designed to provide quick, no-code insights into model performance.
 
----
 ## 📖 References
 
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)  
@@ -46,7 +43,6 @@ Whether you're a beginner in data science or just looking to rapidly prototype i
 
 ### 🌸 Interface
 ![Interface](screenshots/interface.png)
-
 
 ## 🛠️ Instructions
 
