@@ -31,6 +31,8 @@ This repository showcases my data science projects, including exploratory data a
 
 3. **Third Project**: ML Streamlit App LINK: [https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/MLStreamlitapp](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/MLStreamlitapp)
 
+From Streamlit Cloud LINK: [https://gabrielasanchezt-sanchez-data-science--mlstreamlitappapp-vgbda3.streamlit.app/](https://gabrielasanchezt-sanchez-data-science--mlstreamlitappapp-vgbda3.streamlit.app/)
+
 
 Description:
 What the Tidy Data project entails:
