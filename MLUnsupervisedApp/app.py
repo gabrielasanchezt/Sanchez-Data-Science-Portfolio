@@ -46,6 +46,10 @@ X = df[features]
 # Sidebar: Model Controls
 st.sidebar.title(" Model Parameters")
 num_clusters = st.sidebar.slider("Number of Clusters", min_value=2, max_value=10, value=3)
+# New Controls
+linkage_method = st.sidebar.selectbox("Linkage Method (for Hierarchical)", ["ward", "complete", "average", "single"])
+pca_components = st.sidebar.slider("Number of PCA Components", min_value=2, max_value=min(10, len(features)), value=2)
+
 
 # --- K-MEANS CLUSTERING ---
 st.subheader(" K-Means Clustering")
@@ -70,7 +74,7 @@ st.subheader("🔸 Hierarchical Clustering")
 
 try:
     # Generate linkage matrix for dendrogram
-    linkage_matrix = linkage(X, method="ward")
+    linkage_matrix = linkage(X, method=linkage_method)
 
     fig_dendro, ax_dendro = plt.subplots(figsize=(10, 4))
     dendrogram(linkage_matrix, ax=ax_dendro)
@@ -84,7 +88,7 @@ except Exception as e:
 st.subheader("Principal Component Analysis (PCA)")
 
 # Reduce to 2 principal components
-pca = PCA(n_components=2)
+pca = PCA(n_components=pca_components)
 X_pca = pca.fit_transform(X)
 
 # Plot PCA result with K-Means labels
