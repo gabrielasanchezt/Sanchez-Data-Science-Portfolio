@@ -82,7 +82,9 @@ if data is not None:
 
     # Smart problem type detection
     import numpy as np
-    is_classification = y.nunique() <= 20 and np.allclose(y.dropna(), np.round(y.dropna()))
+    is_classification = y.nunique() <= 20 and y.dtype != 'object'
+    if is_classification:
+        y = y.astype(int)
 
     # Show classification/regression info
     if is_classification:
