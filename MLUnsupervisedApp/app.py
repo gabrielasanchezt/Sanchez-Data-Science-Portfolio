@@ -34,6 +34,17 @@ df = load_data(uploaded_file)
 st.subheader("📊 Original Dataset Overview")
 st.write(df.head())
 
+if df.isnull().values.any() :
+    st.subheader("📊 Missing values")
+    missing_counts = df.isnull().sum().reset_index()
+    missing_counts.columns = ['Column', 'Missing Values']
+    # Crear gráfico de barras
+    fig = px.bar(missing_counts, x='Column', y='Missing Values',
+                title='Missing values per column',
+                text='Missing Values')
+    # Mostrar en Streamlit
+    st.plotly_chart(fig)
+
 # Feature selection
 # For this version, I will consider only numeric columns. Future releases can use OneHotEncoder to
 # transform labels to numeric representatios.
