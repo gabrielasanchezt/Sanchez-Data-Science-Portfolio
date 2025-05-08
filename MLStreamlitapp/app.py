@@ -81,7 +81,8 @@ if data is not None:
     X = X.fillna(X.mean())
 
     # Smart problem type detection
-    is_classification = y.nunique() <= 20 and all(y.dropna().astype(int) == y.dropna())
+    import numpy as np
+    is_classification = y.nunique() <= 20 and np.allclose(y.dropna(), np.round(y.dropna()))
 
     # Show classification/regression info
     if is_classification:
