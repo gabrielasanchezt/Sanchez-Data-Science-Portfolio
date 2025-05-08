@@ -1,7 +1,8 @@
 # app.py
 # ------------------------------
 # Supervised Machine Learning Explorer
-
+# Developed with Streamlit
+# ------------------------------
 
 import streamlit as st
 import pandas as pd
@@ -28,7 +29,7 @@ html, body, [class*="css"] { font-family: 'Titillium Web', sans-serif; }
 </style>
 """, unsafe_allow_html=True)
 
-
+# ------------------------------
 # Dataset Loader
 # ------------------------------
 @st.cache_data
@@ -46,7 +47,7 @@ def load_sample_dataset(name):
         cancer = load_breast_cancer(as_frame=True)
         return pd.concat([cancer.data, pd.Series(cancer.target, name='target')], axis=1)
 
-
+# ------------------------------
 # Sidebar: Data Selection
 # ------------------------------
 st.sidebar.header("1. Load a Dataset")
@@ -63,7 +64,7 @@ elif file:
     except Exception as e:
         st.error(f"Error loading file: {e}")
 
-
+# ------------------------------
 # Main Interface: Display and Preprocessing
 # ------------------------------
 if data is not None:
@@ -80,7 +81,7 @@ if data is not None:
     X = X.fillna(X.mean())
 
     # Smart problem type detection
-    is_classification = pd.api.types.is_integer_dtype(y) and y.nunique() <= 20 and not pd.api.types.is_float_dtype(y)
+    is_classification = y.nunique() <= 20 and all(y.dropna().astype(int) == y.dropna())
 
     # Show classification/regression info
     if is_classification:
@@ -94,7 +95,7 @@ if data is not None:
     st.subheader("Target Class Distribution")
     st.bar_chart(y.value_counts())
 
-    
+    # ------------------------------
     # Sidebar: Model Selection and Hyperparameters
     # ------------------------------
     st.sidebar.header("3. Select Model")
@@ -135,7 +136,7 @@ if data is not None:
         p = st.sidebar.selectbox("Distance metric (p)", [1, 2], format_func=lambda x: "Manhattan" if x == 1 else "Euclidean")
         model = KNeighborsRegressor(n_neighbors=n_neighbors, weights=weights, p=p)
 
-    
+    # ------------------------------
     # Model Training and Evaluation
     # ------------------------------
     model.fit(X_train, y_train)
@@ -193,9 +194,9 @@ if data is not None:
         r2 = r2_score(y_test, y_pred)
         st.write(f"**MSE:** {mse:.2f}, **MAE:** {mae:.2f}, **R² Score:** {r2:.2f}")
 
-    
+    # ------------------------------
     # Cross-validation
-
+    # ------------------------------
     st.write("### Cross-Validation")
     cv_scores = cross_val_score(model, X, y, cv=5)
     st.write(f"Scores: {cv_scores}")
