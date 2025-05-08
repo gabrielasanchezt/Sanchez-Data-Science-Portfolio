@@ -1,71 +1,71 @@
-# Sanchez-Data-Science-Portfolio
- portfolio showcasing my Data Science projects
-
 # Sanchez Data Science Portfolio
+
 ## About Me
-# Hi, I'm Gabriela
-![Profile Picture](https://avatars.githubusercontent.com/u/196481302?v=4&size=64)
 
+My name is **Gabriela Sanchez**, and I am an international undergraduate student at the University of Notre Dame from Nicaragua. I am majoring in **International Economics (Portuguese Concentration)** with minors in **Data Science** and **History**, and I am a member of both the **Glynn Family Honors Program** and the **Balfour-Hesburgh Scholars Program**. I have a strong interest in research across economic, linguistic, and financial fields and a growing portfolio of applied data science projects.
 
-
-
-## Professional Bio
-International undergraduate student at Notre Dame from Nicaragua, pursuing a major in International Economics (Portuguese Concentration) with a double minor in Data Science and History. I am also a part of the Glynn Family Honors Program and Balfour-Hesburgh Scholars Program. I have a strong interest in research in economic, linguistic, and financial fields.
 ## Technical Skills
-- **Programming Languages**: Python, R
-- **Data Analysis Tools**: Pandas, NumPy, Scikit-learn
-- **Other Tools**: Jupyter Notebook, Git, Excel
 
-## 🎯 Purpose
-This repository showcases my data science projects, including exploratory data analysis, data visualizations, and machine learning models. It’s a collection of my work and progress in the field of data science.
+- **Programming Languages:** Python, R  
+- **Data Analysis Libraries:** Pandas, NumPy, Scikit-learn  
+- **Visualization Tools:** Matplotlib, Seaborn  
+- **Other Tools:** Streamlit, Git/GitHub, Jupyter Notebook, Excel  
 
-## Structure
-- `EDA/`: Contains exploratory data analysis projects.
-- `Visualizations/`: Includes custom visualizations and dashboards.
-- `Models/`: Showcases machine learning models and their applications.
+## Purpose
 
-## 🚀 Current Projects
-1. **First Project**: Palmer's Penguins LINK: [https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/basic_streamlit.app}](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/basic_streamlit.app)
-  
-2. **Second Project**: Tidy Project Portfolio LINK: [https://github.com/gabrielasanchezt/TidyData-Project/](https://github.com/gabrielasanchezt/TidyData-Project/)
+This repository highlights my work in data science, showcasing hands-on projects that demonstrate my skills in data preprocessing, analysis, visualization, machine learning, and deployment. It reflects both academic exploration and practical applications that support my professional growth.
 
-3. **Third Project**: ML Streamlit App LINK: [https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/MLStreamlitapp](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/MLStreamlitapp)
+## Repository Structure
 
-From Streamlit Cloud LINK: [https://gabrielasanchezt-sanchez-data-science--mlstreamlitappapp-vgbda3.streamlit.app/](https://gabrielasanchezt-sanchez-data-science--mlstreamlitappapp-vgbda3.streamlit.app/)
+- `EDA/`: Exploratory data analysis projects  
+- `Visualizations/`: Interactive and static data visualizations  
+- `Models/`: Machine learning models and evaluation  
+- `MLStreamlitapp/`: A full machine learning app with Streamlit  
 
+## Featured Projects
 
-Description:
-What the Tidy Data project entails:
-This Tidy Data project focuses on cleaning and analyzing a dataset of Olympic athletes and their medal performances across different sports. The goal is to apply Tidy Data Principles to transform the data into a clean, structured format for easier analysis. The dataset includes athlete names, sports, and the medals they won (gold, silver, or bronze). I used Python to clean the data, reshape it, and create visualizations that help show trends in the medal counts across different athletes and sports.
+### 1. Palmer Penguins Classifier  
+**GitHub:** [Palmer Penguins Project](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/basic_streamlit.app)
 
-How it complements the portfolio
+A beginner-level project using the Palmer Penguins dataset to build a species classifier. This app was created to explore basic model building and Streamlit app deployment.
 
-Data Cleaning: I cleaned and reshaped the data, ensuring it’s in a tidy, usable format.
-Data Analysis: I analyzed the data to uncover insights about athletes and their performances.
-Data Visualization: I created clear visualizations to communicate findings effectively.
-I’ve improved my ability to work with real-world data, clean it for analysis, and present my findings in an understandable way using Python tools like Pandas and Matplotlib. It demonstrates my practical skills for any data-related roles.
+### 2. Tidy Data: Olympic Athletes  
+**GitHub:** [Tidy Data Project](https://github.com/gabrielasanchezt/TidyData-Project)
 
-What the ML Sreamlit App entails:
-This app is an interactive machine learning tool built with Streamlit that predicts data. It takes user input (or a loaded dataset), performs data preprocessing, and allows real-time exploration of feature selection, model training, and evaluation using techniques like decision trees, random forests, or gradient boosting.
+**Description:**  
+This project focuses on cleaning and analyzing a dataset of Olympic athletes and their medal performances across different sports. The primary objective was to apply tidy data principles to transform messy, real-world data into a structured format for effective analysis and visualization.
 
-Working on this project deepened my understanding of the entire machine learning pipeline:
-From cleaning and encoding raw data,
-To feature engineering and model selection,
-To interpreting model performance metrics like RMSE and R².
-It also reinforced key lessons about data leakage, handling categorical variables, and the importance of scaling and splitting data correctly to prevent overfitting.
+**Contribution to Portfolio:**  
+- Demonstrates foundational data cleaning skills  
+- Applies tidy data principles to enable better analysis  
+- Produces clear visualizations that support interpretation of trends
 
-How it complements portfolio:
-Deploying models in a web interface using Streamlit, creating responsive visualizations with libraries like Seaborn and Matplotlib, and letting users customize model parameters and explore outputs live.
+### 3. Machine Learning Streamlit App  
+**GitHub:** [ML Streamlit App](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/MLStreamlitapp)  
+**Live App:** [View App on Streamlit Cloud](https://gabrielasanchezt-sanchez-data-science--mlstreamlitappapp-vgbda3.streamlit.app/)
 
-By showcasing this project in my portfolio, I highlight:
-My full-stack data science capabilities (from data to deployment),
-My comfort with Python interactivity and UI frameworks,
+**Description:**  
+This is an interactive machine learning application that allows users to upload their own dataset or choose from sample datasets. The app automatically identifies whether the task is classification or regression, enables hyperparameter tuning, and presents visual feedback using charts, performance metrics, and cross-validation results.
+
+**Key Features:**  
+- Dynamic classification vs. regression detection  
+- Support for multiple supervised learning models  
+- Real-time performance metrics (e.g., accuracy, confusion matrix, ROC curve, MSE, R²)  
+- Hyperparameter tuning via an intuitive sidebar  
+- Clean, responsive Streamlit interface with usage guidance  
+
+**Contribution to Portfolio:**  
+- Demonstrates full-stack ML capability from preprocessing to deployment  
+- Emphasizes model interpretability and user-centered design  
+- Highlights practical knowledge of scikit-learn, matplotlib, seaborn, and Streamlit
 
 ## Goals
-1. Learn about coding
-2. Be able to enhance my professional profile
-3. Showcase my personal projects and technical skills
 
----
-- 📧 Email: msanch25@nd.edu
-- 🔗 LinkedIn: [Gabriela Sanchez](https://www.linkedin.com/in/gabriela-sanchez-1b0476225/)
+1. Expand my technical and programming skills  
+2. Build a professional portfolio that reflects my analytical abilities  
+3. Apply data science principles to meaningful and relevant problems
+
+## Contact
+
+- **Email:** msanch25@nd.edu  
+- **LinkedIn:** [Gabriela Sanchez](https://www.linkedin.com/in/gabriela-sanchez-1b0476225/)
