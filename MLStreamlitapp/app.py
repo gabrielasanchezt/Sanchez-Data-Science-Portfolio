@@ -110,33 +110,41 @@ if data is not None:
     st.sidebar.header("4. Set Hyperparameters")
 
     # Model initialization
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("### ℹ️ Model Description")
     if model_type == "Logistic Regression":
         C = st.sidebar.slider("Inverse regularization strength (C)", 0.01, 10.0, 1.0)
         solver = st.sidebar.selectbox("Solver", ("lbfgs", "liblinear"))
+        st.sidebar.info("Logistic Regression is a linear model used for binary or multiclass classification tasks. It estimates probabilities using a logistic function.")
         model = LogisticRegression(C=C, solver=solver, max_iter=1000)
 
     elif model_type == "Decision Tree":
         max_depth = st.sidebar.slider("Max Depth", 1, 20, 5)
         criterion = st.sidebar.selectbox("Criterion", ("gini", "entropy"))
+        st.sidebar.info("Decision Trees split data into branches based on feature values to make classification decisions. They are easy to interpret.")
         model = DecisionTreeClassifier(max_depth=max_depth, criterion=criterion)
 
     elif model_type == "K-Nearest Neighbors":
         n_neighbors = st.sidebar.slider("n_neighbors", 1, 20, 5)
         weights = st.sidebar.selectbox("Weights", ("uniform", "distance"))
         p = st.sidebar.selectbox("Distance metric (p)", [1, 2], format_func=lambda x: "Manhattan" if x == 1 else "Euclidean")
+        st.sidebar.info("K-Nearest Neighbors (KNN) classifies data based on the majority label of the 'k' closest points in feature space.")
         model = KNeighborsClassifier(n_neighbors=n_neighbors, weights=weights, p=p)
 
     elif model_type == "Linear Regression":
+        st.sidebar.info("Linear Regression models the relationship between features and a continuous target by fitting a straight line.")
         model = LinearRegression()
 
     elif model_type == "Decision Tree Regressor":
         max_depth = st.sidebar.slider("Max Depth", 1, 20, 5)
+        st.sidebar.info("Decision Tree Regressors split data based on feature values and predict the average target value in each leaf.")
         model = DecisionTreeRegressor(max_depth=max_depth)
 
     elif model_type == "K-Nearest Regressor":
         n_neighbors = st.sidebar.slider("n_neighbors", 1, 20, 5)
         weights = st.sidebar.selectbox("Weights", ("uniform", "distance"))
         p = st.sidebar.selectbox("Distance metric (p)", [1, 2], format_func=lambda x: "Manhattan" if x == 1 else "Euclidean")
+        st.sidebar.info("KNN Regressor predicts the average target value of the 'k' nearest neighbors in feature space.")
         model = KNeighborsRegressor(n_neighbors=n_neighbors, weights=weights, p=p)
 
     # ------------------------------
@@ -206,3 +214,30 @@ if data is not None:
     st.write(f"Mean CV Score: {cv_scores.mean():.2f}")
 else:
     st.info("Please load a dataset to get started!")
+
+    with st.expander("How to Use This App"):
+        st.markdown("""
+        **Welcome to the Supervised Machine Learning Explorer!**
+
+        Here's how to get started:
+
+        1. **Load Data**
+           - Choose one of the sample datasets from the sidebar, or upload your own CSV file.
+
+        2. **Select the Target Column**
+           - Pick the variable you want to predict (e.g., `target`, `label`, or a numeric field).
+
+        3. **Explore Models**
+           - Based on your target, the app will automatically choose classification or regression models.
+           - Adjust hyperparameters using the sliders and dropdowns.
+
+        4. **Review Results**
+           - View performance metrics, confusion matrix (if classification), or regression errors.
+           - For binary classification, check out the ROC Curve.
+
+        5. **Interpret Outputs**
+           - Use feature importance (available for decision trees) and cross-validation scores to understand model behavior.
+
+        ---
+        For best results, ensure your CSV has a clean header and uses numeric values or categories that can be encoded.
+        """)
