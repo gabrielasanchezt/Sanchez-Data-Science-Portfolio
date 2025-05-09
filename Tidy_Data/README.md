@@ -50,7 +50,7 @@ pip install pandas matplotlib seaborn notebook
 2. Navigate to the project directory:
 
    ```bash
-   cd Sanchez-Data-Science-Portfolio/TidyData-Project
+   cd Sanchez-Data-Science-Portfolio/Tidy_Data
    ```
 
 3. Start Jupyter Notebook:
