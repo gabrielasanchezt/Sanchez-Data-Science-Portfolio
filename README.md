@@ -1,89 +1,34 @@
 # Sanchez Data Science Portfolio
 
-## About Me
-
-My name is Gabriela Sanchez, and I am an international undergraduate student at the University of Notre Dame from Nicaragua. I am majoring in **International Economics (Portuguese Concentration)** with minors in **Data Science** and **History**. I am a proud member of the **Glynn Family Honors Program** and the **Balfour-Hesburgh Scholars Program**, both of which support rigorous academic inquiry and leadership development.
-
-My academic and professional interests lie at the intersection of economics, language, and data. Through this portfolio, I aim to demonstrate how computational tools can be applied to solve real-world problems, from exploring economic patterns to deploying accessible, interactive machine learning applications. My projects combine theory, statistical rigor, and strong visual storytelling.
-
-## Technical Skills
-
-* **Languages:** Python, R
-* **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
-* **Frameworks & Tools:** Streamlit, Git/GitHub, Jupyter Notebook, Excel
-* **Techniques:** Data wrangling, exploratory data analysis, data visualization, model selection, supervised learning, unsupervised learning, model deployment
-
 ## Purpose of This Portfolio
 
 This repository highlights hands-on projects that reflect both the breadth and depth of my training in data science. These projects not only demonstrate technical skills—such as model development and data cleaning—but also reflect my ability to communicate insights clearly and build tools for non-technical users. My goal is to create work that is reproducible, interpretable, and impactful.
 
 ---
 
-## At a Glance
+# Projects and Applications – At a Glance
 
-You're right — GitHub-flavored Markdown has limited table formatting, and long descriptions or multiline cells don’t render well. Here's a simplified version of the “At a Glance” section, using bullet points instead of a table so it’s fully compatible with `README.md` display:
-
----
-
-## At a Glance
-
-**1. Palmer Penguins Classifier**
-[GitHub Link](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/basic_streamlit.app)
-A beginner-friendly classification project using the Palmer Penguins dataset. Deployed as an interactive Streamlit app to visualize predictions and demonstrate basic model development.
-
-**2. Tidy Data: Olympic Athletes**
-[GitHub Link](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/Tidy_Data)
-Applies tidy data principles to a real-world Olympic dataset. Focuses on data cleaning, reshaping, and creating clear visualizations to interpret athlete performance and medal trends.
-
-**3. Machine Learning Streamlit App**
-[GitHub Link](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/MLStreamlitapp)
+## Unsupervised Machine Learning App
+[GitHub Repository](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
 [Live App](https://sanchez-data-science-portfolio-2pdvkustkkj3kwupdwzbxb.streamlit.app/)
-This project is an interactive web application built with Streamlit that allows users to explore unsupervised machine learning techniques, including K-Means Clustering, Hierarchical Clustering, and Principal Component Analysis (PCA).
+This interactive Streamlit application allows users to explore key unsupervised learning techniques including Principal Component Analysis (PCA), K-Means Clustering, and Hierarchical Clustering. Users can upload their own datasets or use the built-in Iris dataset, customize hyperparameters, and visualize results with dynamic plots such as scatterplots, scree plots, dendrograms, and silhouette curves. This app emphasizes workflow integration—from data upload and preprocessing to model evaluation and interpretation.
 
-**4. ML Unsupervised Streamlit App**
-[Github Link](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
-[Live App]
+## Supervised Machine Learning App
+[GitHub Repository](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/MLStreamlitapp)
+[Live App](https://gabrielasanchezt-sanchez-data-science--mlstreamlitappapp-vgbda3.streamlit.app/)
 
----
+This Streamlit-based app supports both classification and regression tasks using models like Logistic Regression, Linear Regression, Decision Trees, and more. Users can upload datasets, select target and feature variables, tune model parameters, and visualize performance using confusion matrices, ROC curves, and decision boundaries. The project highlights full-stack deployment of supervised learning models in an interactive environment.
 
-## Featured Projects
+## Tidy Data Project
+[GitHub Repository](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/Tidy_Data)
 
-### 1. Palmer Penguins Classifier
+This project focuses on reshaping and cleaning a dataset of medalists from the 2008 Summer Olympics. Using pandas operations such as .melt() and .str.split(), the data is transformed into a tidy format—ensuring that each variable forms a column, each observation a row, and each type of observational unit a separate table. This work showcases my understanding of the tidy data framework and my ability to prepare real-world data for analysis.
 
-* **Dataset:** Palmer Penguins (alternative to Iris)
-* **Objective:** Build a classifier to predict species based on physical features.
-* **Approach:** Preprocessed and visualized data, trained models using scikit-learn, and deployed results in a Streamlit app.
-* **Skills Demonstrated:** Data exploration, logistic regression, model evaluation (accuracy, confusion matrix), web app deployment.
-* **Impact:** Demonstrates foundational understanding of classification tasks and interactive app development for a general audience.
+## Palmer Penguins Classifier
+[GitHub Repository](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/basic_streamlit.app)
 
----
+A beginner-level classification project built around the Palmer Penguins dataset—commonly used as an alternative to the Iris dataset. This app uses scikit-learn to train a model predicting penguin species based on input features such as bill length, flipper length, and body mass. Deployed using Streamlit, the app demonstrates foundational skills in model training, evaluation, and user-facing application development.
 
-### 2. Tidy Data: Olympic Athletes
-
-* **Dataset:** Olympic performance dataset with athlete demographics and medal counts.
-* **Objective:** Clean and restructure messy data to explore trends in athlete performance, gender distribution, and sport-level patterns.
-* **Approach:** Implemented tidy data principles (e.g., one variable per column, one observation per row), used pandas for reshaping, and visualized with matplotlib and seaborn.
-* **Skills Demonstrated:** Data wrangling, exploratory analysis, gender-based segmentation, country-wise comparisons, visual storytelling.
-* **Impact:** Highlights ability to clean and structure complex real-world datasets to uncover meaningful trends.
-
----
-
-### 3. Machine Learning Streamlit App
-
-* **Live App:** [Streamlit Deployment](https://gabrielasanchezt-sanchez-data-science--mlstreamlitappapp-vgbda3.streamlit.app/)
-* **Objective:** Build a general-purpose tool that allows users to upload datasets and apply ML models without writing code.
-* **Key Features:**
-
-  * Upload your own CSV or use built-in sample datasets
-  * Automatically detects classification vs. regression
-  * Supports K-Nearest Neighbors, Decision Trees, Random Forests, and more
-  * Real-time performance metrics (accuracy, confusion matrix, MSE, R²)
-  * Hyperparameter tuning through sidebar sliders
-  * PCA and scatterplot visualizations for model interpretability
-* **Skills Demonstrated:** Full-stack ML workflow, interactive app building, modular design, user experience (UX) focus
-* **Impact:** Demonstrates end-to-end fluency in deploying machine learning models for practical, accessible use by non-technical users
-
----
 
 ## Goals
 
