@@ -1,84 +1,106 @@
 # Tidy Data Project: Athlete Medal Analysis
-Tidy Data Project - Data cleaning, visualization, and analysis using Python and Jupyter Notebook.
+
+This project focuses on transforming and analyzing a dataset containing information about 2008 Olympic medalists. The goal is to apply tidy data principles to restructure a complex dataset into a clean, analysis-ready format, followed by visual and tabular exploratory data analysis.
+
 ## Project Overview
 
-The goal of this project is to apply the principles of **tidy data** to clean and transform a dataset related to athlete medal performance. The project demonstrates the process of cleaning a messy dataset, reshaping it into a tidy format, and performing exploratory data analysis (EDA) with visualizations.
+The dataset includes information about athletes, their sports, and the medals they won. The data is initially in a wide format, with columns combining gender, sport, and medal type. Using tidy data principles, this project reshapes the dataset so that each variable has its own column, each observation is a row, and each type of observational unit forms its own table.
 
-**Tidy Data Principles:**
-- **Each variable** should have its own column.
-- **Each observation** should be a row.
-- **Each type of observational unit** should form its own table.
+The project involves:
 
-In this project, the dataset includes data about athletes, their events, and the medals they won (gold, silver, or bronze). We clean the data to make it more structured and easy to analyze.
+* Data cleaning using pandas, including handling missing values and renaming columns for clarity
+* Reshaping the dataset using `melt()` to convert it to a long format
+* Splitting combined column values into meaningful separate variables (e.g., sport and medal type)
+* Filtering and summarizing key patterns in the data
+* Creating visualizations that highlight medal distribution by athlete and gender
 
-## Instructions
+## Tidy Data Principles Applied
 
-### Requirements
-To run this project, you'll need the following Python libraries installed:
-- pandas
-- matplotlib
-- seaborn
-- Jupyter Notebook
+* Each **variable** is stored in its own column
+* Each **observation** is stored in its own row
+* Each **type of observational unit** is stored in its own table
 
-### Setup and Running the Notebook
+These principles were used to transform a non-tidy dataset into a structured and interpretable format suitable for analysis.
 
-1. Clone or download the repository:
-    ```bash
-    git clone https://github.com/gabrielasanchezt/TidyData-Project.git
-    ```
+## Setup and Usage
 
-2. Navigate to the project folder:
-    ```bash
-    cd TidyData-Project
-    ```
+### Prerequisites
 
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+To run this project, the following Python libraries are required:
 
-4. Open the Jupyter notebook:
-    ```bash
-    jupyter notebook
-    ```
+* pandas
+* matplotlib
+* seaborn
+* Jupyter Notebook
 
-5. Open the `Tidy-Data-Project.ipynb` notebook and run all the cells to clean the data and create visualizations.
+To install all required libraries, run:
 
-### Dependencies
-- **pandas**: For data manipulation and cleaning.
-- **matplotlib**: For creating visualizations.
-- **seaborn**: For enhanced data visualizations and plots.
+```bash
+pip install pandas matplotlib seaborn notebook
+```
 
-You can install the required dependencies by running:
-pip install pandas matplotlib seaborn
+### Running the Notebook
 
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd Sanchez-Data-Science-Portfolio/TidyData-Project
+   ```
+
+3. Start Jupyter Notebook:
+
+   ```bash
+   jupyter notebook
+   ```
+
+4. Open the notebook file named `Tidy-Data-Project.ipynb` and run all cells sequentially.
 
 ## Dataset Description
 
-The dataset used in this project contains information about athletes, their events, and the medals they won in various sports. The dataset includes the following columns:
+The dataset includes the following features:
 
-medalist_name: Name of the athlete.
-male_archery, female_archery, male_athletics, female_athletics, etc.: Columns for each sport, with values representing the type of medal (gold, silver, or bronze) won by the athlete in that sport.
+* `medalist_name`: Name of the athlete
+* Columns for each gender-sport combination (e.g., `male_archery`, `female_athletics`), where the value indicates the medal won (gold, silver, or bronze)
 
-## Pre-processing Steps:
-Data Cleaning: Missing values were handled, and columns were renamed for clarity.
-Reshaping: The dataset was "melted" so that each row represents an individual athlete-event combination, ensuring the data was in a tidy format.
-Splitting Columns: The combined column Year_Medal was split into two new columns: Year and Medal, allowing for easier analysis.
-Filtering: Data was filtered to focus on the top athletes and their medal counts.
+After preprocessing, the dataset contains:
 
-## Sources
+* `medalist_name`
+* `sport`: Extracted from the original column name
+* `gender`: Extracted from the original column name
+* `medal`: The medal type awarded
 
-Dataset Source: The dataset used in this project was sourced from [Olympic Medalists Data](Tidy_Data/olympics_08_medalists.csv).
-Pandas Cheat Sheet: Pandas Cheat Sheet
-Tidy Data Paper: Tidy Data Paper
+## Data Cleaning and Transformation
 
-## Visual Examples
-Below are some examples of the visualizations generated from the cleaned data:
+Key transformation steps included:
 
-1. Total Medal Count by Athlete (Gold, Silver, Bronze)
-This chart displays the total number of gold, silver, and bronze medals won by the top 10 athletes.
-![Total Medal Count](images/Medal_Count.png)
+* Handling missing values
+* Melting the dataset from wide to long format
+* Splitting combined column values (e.g., `female_archery`) into separate `gender` and `sport` columns
+* Renaming columns to be consistent and descriptive
+* Filtering for top athletes by total medal count
+* Creating a pivot table to aggregate medal counts by athlete and medal type
 
-2. Medal Distribution by Athlete Type
-This chart provides a breakdown of the total medals won by athletes, grouped by medal type (gold, silver, bronze) and gender.
-![Medal Distribution](images/Medal_Distribution.png)
+## Visualizations
+
+Two primary visualizations were created:
+
+1. **Total Medal Count by Athlete**
+   A bar chart showing the number of gold, silver, and bronze medals for the top 10 athletes by total medal count.
+
+2. **Medal Distribution by Gender**
+   A grouped bar chart visualizing the distribution of gold, silver, and bronze medals by gender.
+
+Images are located in the `images/` directory and linked within the notebook.
+
+## Sources and References
+
+* Dataset Source: Olympic Medalists Dataset, 2008
+* [Pandas Cheat Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+* [Tidy Data (Hadley Wickham)](https://vita.had.co.nz/papers/tidy-data.pdf)
+
