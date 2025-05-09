@@ -11,6 +11,7 @@ This repository highlights hands-on projects that reflect both the breadth and d
 ## Unsupervised Machine Learning App
 [GitHub Repository](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
 [Live App](https://sanchez-data-science-portfolio-2pdvkustkkj3kwupdwzbxb.streamlit.app/)
+
 This interactive Streamlit application allows users to explore key unsupervised learning techniques including Principal Component Analysis (PCA), K-Means Clustering, and Hierarchical Clustering. Users can upload their own datasets or use the built-in Iris dataset, customize hyperparameters, and visualize results with dynamic plots such as scatterplots, scree plots, dendrograms, and silhouette curves. This app emphasizes workflow integration—from data upload and preprocessing to model evaluation and interpretation.
 
 ## Supervised Machine Learning App
