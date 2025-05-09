@@ -68,7 +68,7 @@ Filtering: Data was filtered to focus on the top athletes and their medal counts
 
 ## Sources
 
-Dataset Source: The dataset used in this project was sourced from [Olympic Medalists Data](insert your dataset source or link here).
+Dataset Source: The dataset used in this project was sourced from [Olympic Medalists Data](Tidy_Data/olympics_08_medalists.csv).
 Pandas Cheat Sheet: Pandas Cheat Sheet
 Tidy Data Paper: Tidy Data Paper
 
