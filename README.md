@@ -37,8 +37,8 @@ Applies tidy data principles to a real-world Olympic dataset. Focuses on data cl
 
 **3. Machine Learning Streamlit App**
 [GitHub Link](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/MLStreamlitapp)
-[Live App](https://gabrielasanchezt-sanchez-data-science--mlstreamlitappapp-vgbda3.streamlit.app/)
-An end-to-end machine learning tool that supports both classification and regression tasks. Users can upload their own datasets, tune models interactively, and view performance metrics in real time.
+[Live App](https://sanchez-data-science-portfolio-2pdvkustkkj3kwupdwzbxb.streamlit.app/)
+This project is an interactive web application built with Streamlit that allows users to explore unsupervised machine learning techniques, including K-Means Clustering, Hierarchical Clustering, and Principal Component Analysis (PCA).
 
 **4. ML Unsupervised Streamlit App**
 [Github Link](https://github.com/gabrielasanchezt/Sanchez-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)
