@@ -110,11 +110,11 @@ pip install -r requirements.txt
 
 ---
 
-### Chart
-![Chart](screenshots/chart.png)
+### K-Means Clustering
+![kmeans](screenshots/kmeans.png)
 
-### Bar Chart
-![Chart](screenshots/bar_chart.png)
+### Dendogram
+![dendogram](screenshots/dendogram.png)
 
 ---
 
